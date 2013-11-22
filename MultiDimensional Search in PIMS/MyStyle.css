@@ -1,0 +1,25 @@
+﻿#HomesDiv1 {
+    border-style: solid; border-color: #99cc99; font-weight: bold; z-index: 102; left: 242px; width: 766px; position: absolute; top: 90px; height: 458px; background-color: #ffffff;
+}
+
+.myTextblock {
+    display: block;
+    font: 12px/37px Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+.lightcoloredText {
+        color: #9DA086;
+}
+
+/*Management Login*/
+.ManagementLogin {
+    border:1px solid #AAA;
+    border-style: solid;
+    position: relative;
+    padding: 55px 130px 55px 200px;
+    margin-top: 15px;
+    cursor: default;
+}
+.login_h2{
+	font:bold 18px/34px Georgia, "Times New Roman", Times, serif; 
+}

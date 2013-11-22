@@ -1,0 +1,25 @@
+﻿    <div id="tabs">
+        <ul>
+            <li><a href="#tabs-1" id="aTabSimple">Simple Search</a></li>
+            <li><a href="#tabs-2" id="aTabMulti" >Multi Dimensional Search</a></li>
+            <li><a href="#tabs-3">Tab3 Link</a></li>
+        </ul>
+        <div id="tabs-1">
+            <table id="Tbl_Search" runat="server">
+                <tr>
+                    <td><asp:TextBox ID="TxtBx_Search" runat="server" Width="350px" CssClass="mytext">NEC ECM</asp:TextBox></td>
+                    <td><asp:Button ID="Btn_Search" runat="server" Text="Search" CssClass="myButton" OnClick="Btn_Search_Click"/></td>
+                </tr>
+             </table>
+        </div>
+        <div id="tabs-3">
+            tab3
+        </div>
+	</div>
+
+
+	        //+ " AND (d.DepartmentName LIKE '%" + TxtBx_F_Dept.Text + "%' "
+        //+ "     OR  f.Qualification LIKE  '%" + TxtBx_F_Q.Text + "%'"
+        //+ "     OR  f.Position LIKE  '%" + TxtBx_F_P.Text + "%'"
+        //+ "     OR  f.ExperienceYears LIKE  '%" + TxtBx_F_Exp.Text + "%')"; 
+

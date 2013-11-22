@@ -1,0 +1,70 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MyMasterPage.master.cs" Inherits="MyMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>Multi Dimenstion Fuzzy Search</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="MyStyle.css" rel="Stylesheet" type="text/css"/>
+    <link href="Contents/css/Nivo Slider/nivo-slider.css" rel="Stylesheet" type="text/css" />
+    <link href="Contents/css/Nivo Slider/default.css" rel="Stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="Contents/css/smoothness/jquery-ui-1.9.2.custom.css" />
+    <script type="text/javascript" src="Contents/JavaScript/jQuery1.7.2.js"></script>
+    <script type="text/javascript" src="Contents/JavaScript/jquery-ui-1.9.2.custom.min.js"></script>
+    <script type="text/javascript" src="Contents/JavaScript/jquery.nivo.slider.pack.js"></script>
+    <script type="text/javascript" src="Contents/JavaScript/MyJavaScript.js"></script>
+    <style type="text/css">
+    .mysrchButton 
+    {
+        border-color: red;
+        border-width:5px;
+    }
+</style>
+</head>
+<body>
+
+    <form id="form1" runat="server">
+        <div id="topNav">	
+	        <ul>
+	            <li><a href="Login.aspx" title="Login">Login</a></li>
+	            <li><a href="Home.aspx" title="Home" class="hover">MDFuzzy</a></li>
+                <li><a href="SimpleSearch.aspx" title="Simple Search">Simple Search</a></li>
+	            <li><a href="NewEntity.aspx" title="New Entity">Add New Entity</a></li>
+	            <li><a href="Home.aspx" title="Support">Faculty</a></li>
+	            <li><a href="Home.aspx" title="Productions">Students</a></li>
+	            <li><a href="ContactUs.aspx" title="ContactUs">contact us</a></li>
+	            <!--<li><a href="#" title="location">Training & Placement </a></li> -->
+	        </ul>
+	    </div>
+        <div id="body" runat="server" class="MyMasterBody">
+            <div class="bodyText">
+                <h2>Multi Dimenstion Fuzzy Search</h2>
+                <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+        <!-- footer start -->
+	    <div id="footer">
+		    <div class="footer">
+			    <ul>
+				    <li><a href="#" title="Home">home</a>|</li>
+				    <li><a href="#" title="Our Clients"></a>|</li>
+				    <li><a href="#" title="Support">support</a>|</li>
+				    <li><a href="#" title="New Sservices">Organization group</a>|</li>
+				    <li><a href="#" title="Productions"></a>|</li>
+				    <li><a href="#" title="Contact">contact</a></li>
+			    </ul>
+			    <p>&copy;Project 11 All rights reserved.</p>
+			    <p class="tworld">Designed by : <a href="http://www.templateworld.com">Batch No-11 NEC-ECM</a></p>
+	        <br class="spacer" /></div>
+	    </div>
+	    <!-- footer end -->		
+    </form>
+    <div class="errorDialog" runat="server" id="Div_errDial" visible="false" title="Message">
+        <p>message</p>
+    </div>
+</body>
+</html>
